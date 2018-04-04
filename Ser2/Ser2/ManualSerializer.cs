@@ -18,7 +18,6 @@ namespace Ser2.Serializer
         public static SByte ReturnSByteValue(int StartIndexInBytes, int VarSizeInBytes)
         {
             SByte temp = 0;
-            int u = 0x0;
             if (File.Exists(fileName))
             {
                 using (BinaryReader reader = new BinaryReader(File.Open(fileName, FileMode.Open)))
